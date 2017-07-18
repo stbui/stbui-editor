@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>stbui</title>
+    <link rel="stylesheet" type="text/css" href="css/stbui.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="ui-panel ui-panel-spinner">
+        <div class="ui-panel-body">
+            <a class="ui-btn stbui-icon-logo"></a>
+            <a class="ui-btn stbui-icon-page"></a>
+            <a class="ui-btn stbui-icon-color"></a>
+            <a class="ui-btn stbui-icon-add"></a>
+            <a class="ui-btn stbui-icon-preview"></a>
+            <a class="ui-btn stbui-icon-save"></a>
+            <a class="ui-btn stbui-icon-publish"></a>
+        </div>
+    </div>
+
+    <div class="ui-panel ui-panel-page" style="  background-color: #101010;">
+        <div class="stbui-panel-header">
+            <h2 class="ui-panel-title">页面设置<i class="stbui-icon-close ui-icon-close"></i></h2>
+        </div>
+        <div class="stbui-panel-body">
+
+            <div class="ui-additive">
+                <i style="background-image: url(http://design.9466.com/assets/widgets/area/icon.png);"></i>
+                <label>容器</label>
+            </div>
+            <div class="ui-additive">
+                <i style="background-image: url(http://design.9466.com/assets/widgets/titlebox/icon.png);"></i>
+                <label>容器</label>
+            </div>
+            <div class="ui-additive">
+                <i style="background-image: url(http://design.9466.com/assets/widgets/tabbox/icon.png);"></i>
+                <label>容器</label>
+            </div>
+             <div class="ui-additive">
+                <i style="background-image: url(http://design.9466.com/assets/widgets/divider/icon.png);"></i>
+                <label>容器</label>
+            </div>
+             <div class="ui-additive">
+                <i></i>
+                <label>容器</label>
+            </div>
+             <div class="ui-additive">
+                <i></i>
+                <label>容器</label>
+            </div>
+             <div class="ui-additive">
+                <i></i>
+                <label>容器</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-panel ui-panel-form" style="display:none;">
+        <div class="stbui-panel-header">
+            <h2 class="ui-panel-title">页面设置<i class="stbui-icon-close ui-icon-close"></i></h2>
+        </div>
+        <div class="stbui-panel-body">
+            <div class="stbui-form-item">
+                <label>页面名称</label>
+                <input type="text" class="ui-input ui-input-dark" style="width:75%">
+            </div>
+            <div class="stbui-form-item">
+                <label>文件名</label>
+                <input type="text" class="ui-input ui-input-dark" style="width:58%">
+                <span class="ext">.html</span>
+            </div>
+            <div class="stbui-form-item">
+                SEO
+            </div>
+            <div class="stbui-form-item">
+                <label>标题</label>
+                <input type="text" class="ui-input ui-input-dark" style="width:75%">
+            </div>
+            <div class="stbui-form-item">
+                <label>关键词</label>
+                <input type="text" class="ui-input ui-input-dark" style="width:75%">
+            </div>
+            <div class="stbui-form-item">
+                <label>描述</label>
+                <!-- <input type="text" class="ui-input ui-input-dark" style="width:75%"> -->
+                <textarea class="ui-input ui-input-dark" id="form-description" style="height:80px;"></textarea>
+            </div>
+
+            <input type="submit" value="保存" class="stbui-btn stbui-btn-wrap stbui-btn-primary">
+        </div>
+    </div>
+
+    <div class="ui-panel ui-panel-attr" style="display:none;">
+        <div class="stbui-panel-header">
+            <div class="breadcrumbs">
+                <a><i>页面</i></a>
+            </div>
+        </div>
+        <div class="stbui-panel-body">
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>页面设置</h3></div>
+                <table class="stbui-table" style="display:none;">
+                    <tbody>
+                        <tr>
+                            <td>宽度</td>
+                            <td>
+                                <div class="ui-control">
+                                    <input class="ui-input" type="text">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>背景色</td>
+                            <td>
+                                <div class="ui-control color">
+                                    <input class="ui-input" type="text">
+                                    <span class="color"><i></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>背景图</td>
+                            <td>
+                                <div class="ui-control image">
+                                    <div class="preview"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title">位置和大小</h3></div>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>背景</h3></div>
+                <table class="stbui-table" style="display:block;">
+                    <tbody>
+                        <tr>
+                            <td>颜色</td>
+                            <td>
+                                <div class="ui-control color">
+                                    <input class="ui-input" type="text">
+                                    <span class="color"><i></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;">背景图</td>
+                            <td>
+                                <div class="ui-control image">
+                                    <div class="preview"></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>定位</td>
+                            <td>
+                                <div class="preset">
+                                    <a class="left-top" data-pos="left top"><i class="stbui-icon stbui-icon-position-left-top"></i></a>
+                                    <a class="top" data-pos="top"><i class="stbui-icon stbui-icon-position-top"></i></a>
+                                    <a class="right-top" data-pos="right top"><i class="stbui-icon stbui-icon-position-right-top"></i></a>
+                                    <a class="left" data-pos="left"><i class="stbui-icon stbui-icon-position-left"></i></a>
+                                    <a class="center" data-pos="center"><i></i></a>
+                                    <a class="right" data-pos="right"><i class="stbui-icon stbui-icon-position-right"></i></a>
+                                    <a class="left-bottom" data-pos="left bottom"><i class="stbui-icon stbui-icon-position-left-bottom"></i></a>
+                                    <a class="bottom" data-pos="bottom"><i class="stbui-icon stbui-icon-position-bottom"></i></a>
+                                    <a class="right-bottom" data-pos="right bottom"><i class="stbui-icon stbui-icon-position-right-bottom"></i></a>
+                                </div>
+                                <div class="offset">
+                                    <div class="row position-x">
+                                        <span class="label"><a></a>横向</span>
+                                        <div class="ui-control size" style="width: 45px;">
+                                            <span class="unit">px</span>
+                                            <input class="ui-input" type="text">
+                                            <span class="handle"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row position-x">
+                                        <span class="label"><a></a>横向</span>
+                                        <div class="ui-control size" style="width: 45px;">
+                                            <span class="unit">px</span>
+                                            <input class="ui-input" type="text">
+                                            <span class="handle"></span>
+                                        </div>
+                                    </div>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>重复</td>
+                            <td>
+                                <div class="ui-control option" style="width: 80px;">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-text-algin-left"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-algin-center"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-algin-right"></i></span>
+                                </div>
+                                <!-- 固定 -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i></i>边框</h3></div>
+                <table class="stbui-table" style="display:none;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>文字</h3></div>
+                <table class="stbui-table" style="display:block;">
+                    <tbody>
+                        <tr>
+                            <td>字体</td>
+                            <td colspan="3">
+                                <div class="ui-control select">
+                                    <i class="stbui-icon stbui-icon-arrow-down"></i>
+                                    <span class="select-text">请选择</span>
+                                </div>
+                            </td>
+                        </tr>
+                       <tr>
+                            <td>颜色</td>
+                            <td>
+                                <div class="ui-control color" style="width: 80px;">
+                                    <input class="ui-input" type="text">
+                                    <span class="color"><i></i></span>
+                                </div>
+                            </td>
+                            <td>大小</td>
+                            <td>
+                                <div class="ui-control size" style="width: 55px;">
+                                    <span class="unit">px</span>
+                                    <input class="ui-input" type="text">
+                                    <span class="handle"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>对齐</td>
+                            <td>
+                                 <div class="ui-control option" style="width: 80px;">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-text-algin-left"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-algin-center"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-algin-right"></i></span>
+                                </div>
+                            </td>
+                            <td>行高</td>
+                            <td>
+                                <div class="ui-control size" style="width: 55px;">
+                                    <span class="unit">px</span>
+                                    <input class="ui-input" type="text">
+                                    <span class="handle"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>厚度</td>
+                            <td colspan="3">
+                               <div class="ui-control select">
+                                    <i class="stbui-icon stbui-icon-arrow-down"></i>
+                                    <span class="select-text">请选择</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>修饰</td>
+                            <td>
+                                 <div class="ui-control option" style="width: 80px;">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-text-decoration-none"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-underline"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-through"></i></span>
+                                </div>
+                            </td>
+                            <td>样式</td>
+                            <td>
+                                <div class="ui-control option" style="width: 55px;">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-font-style-normal"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-font-style-italic"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>链接</h3></div>
+                <table class="stbui-table" style="display:block;">
+                    <tbody>
+                        <tr>
+                            <td>链接颜色</td>
+                            <td>
+                                <div class="ui-control color">
+                                    <input class="ui-input" type="text">
+                                    <span class="color"><i></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>链接修饰</td>
+                            <td>
+                                <div class="ui-control option">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-text-decoration-none"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-underline"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-through"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>悬停颜色</td>
+                            <td>
+                                <div class="ui-control color">
+                                    <input class="ui-input" type="text">
+                                    <span class="color"><i></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>悬停修饰</td>
+                            <td>
+                                <div class="ui-control option">
+                                    <span class="option active"><i class="stbui-icon stbui-icon-text-decoration-none"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-underline"></i></span>
+                                    <span class="option"><i class="stbui-icon stbui-icon-text-decoration-through"></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>列表设置</h3></div>
+                <table class="stbui-table" style="display:none;">
+                    <tbody>
+                        <tr>
+                            <td>标题字数</td>
+                            <td>
+                               <div class="ui-control size">
+                                    <input class="ui-input" type="text">
+                                    <span class="handle"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>描述字数</td>
+                            <td>
+                               <div class="ui-control size">
+                                    <input class="ui-input" type="text">
+                                    <span class="handle"></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>时间格式</td>
+                            <td>
+                               <div class="ui-control select">
+                                    <i></i>
+                                    <span class="select-text">请选择</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+             <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i class="stbui-icon stbui-icon-arrow-down"></i>标题</h3></div>
+                <table class="stbui-table" style="display:none;">
+                    <tbody>
+                        <tr>
+                            <td>标题文字</td>
+                            <td>
+                               <div class="ui-control size">
+                                    <input class="ui-input" type="text">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>文字对齐</td>
+                            <td>
+                               <div class="ui-control option">
+                                    <span class="option"></span>
+                                    <span class="option active"></span>
+                                    <span class="option"></span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+             <div class="stbui-panel ui-panel-default">
+                <div class="stbui-panel-header"><h3 class="stbui-panel-title"><i></i>设置</h3></div>
+            </div>
+
+        </div>
+    </div>
+
+    <iframe id="desktopTarget" width="100%" height="500px" frameborder="0" src="http://zt.9466.com/template/MDAwMTMzM0Tcw/desktop/index.html" rel="nofollow"></iframe>
+
+
+
+
+    <div class="ui-dialog" style="display:none;">
+        <div class="ui-dialog-container">
+            <div class="ui-dialog-header">
+                <div class="ui-tabs">
+                    <a class="active">上传图片</a>
+                    <a class="">我的图片</a>
+                    <a class="">远程图片</a>
+                </div>
+                <div class="ui-dialog-close">×</div>
+            </div>
+            <div class="ui-dialog-body">
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
